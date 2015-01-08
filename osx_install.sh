@@ -37,6 +37,9 @@ echo "Create symlinks for modules"
 echo ln -s "$SRC/modules" "$DEST/modules"
 ln -n -f -s "$SRC/modules" "$DEST/modules"
 
+echo "Create symlinks for template"
+echo ln -s "$SRC/template" "$DEST/template"
+ln -n -f -s "$SRC/template" "$DEST/template"
 
 echo -e "\n"
 echo "Creating user's preferences directory"
