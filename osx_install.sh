@@ -45,7 +45,7 @@ echo "====================================="
 mkdir "$PREF"
 
 echo "Create symlinks for fp-lib-table"
-ln -f -s "$SRC/fp-lib-table" "$PREF/fp-lib-table"
+ln -f -s "$SRC/template/fp-lib-table.for-pretty" "$PREF/fp-lib-table"
 
 echo -e "\n"
 echo "Fix KISYSMOD variable"
@@ -75,5 +75,8 @@ else
  fi
 
 echo -e "\n"
+
+bash "$SRC/modules_init.sh"
+
 echo "   END   "
 echo "========="
