@@ -109,8 +109,8 @@ En attendant la fin de la compilation, continuer l'installation des librairies.
 Installation de kicad-library
 =============================
 
-J'utilise un fork de la librairie de :
-http://smisioto.no-ip.org/elettronica/kicad/kicad-en.htm
+Pour la gestion des librairies, j'ai créé un fork du dépot officiel:
+https://github.com/KiCad/kicad-library
 
 Téléchargement et installation
 ------------------------------
@@ -119,7 +119,7 @@ Téléchargement et installation
 
    cd ~/Sources
    git clone https://github.com/samdolt/kicad-library.git
-   bash kicad_library/osx_setup_link.sh
+   bash kicad_library/osx_install.sh
 
 Mise à jour du fork:
 --------------------
@@ -129,11 +129,10 @@ Mise à jour du fork:
    cd kicad_library
    git pull
 
-   git remote add upstream git://smisioto.eu/kicad_libs.git
+   git remote add upstream https://github.com/KiCad/kicad-library.git
    git fetch upstream
    git merge upstream/master
    git push
-   ./osx_setup_link.sh
 
 Installation de KiCad
 =====================
@@ -153,6 +152,9 @@ Une fois la compilation de KiCad terminée, on obtient les fichiers suivants:
 
    cp -r demos /Library/Application\ Support/kicad/
    cp -r doc /Library/Application\ Support/kicad/
+
+   cd ../../kicad-library
+   ./osx-install.sh
 
 Paramètres de Kicad
 ===================
