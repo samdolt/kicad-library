@@ -40,6 +40,24 @@ ln -n -f -s "$SRC/modules" "$DEST/modules"
 echo "Create symlinks for template"
 echo ln -s "$SRC/template" "$DEST/template"
 ln -n -f -s "$SRC/template" "$DEST/template"
+# Bug: Default template path is /Applications/kicad.app/Contents/SharedSupport/template
+# Fix:
+if [ -d "/Applications/kicad.app/Contents/SharedSupport" ];
+then
+    echo "Patch kicad.app/Contents/SharedSupport/"
+    TEMPLATE="/Applications/kicad.app/Contents/SharedSupport/template"
+    if [[ -L "$TEMPLATE" && -d "$TEMPLATE" ]]
+    then
+        echo "$TEMPLATE is a symlink"
+    else
+        echo "Remove default $TEMPLATE dirs"
+        rm -r "$TEMPLATE"
+    fi 
+    echo "Fix: Create symlinks for template in kicad.app"
+    ln -n -f -s "$SRC/template" "$TEMPLATE"
+else
+    echo "/Applications/kicad.app/Contents/SharedSupport not found"
+fi
 
 echo -e "\n"
 echo "Creating user's preferences directory"
