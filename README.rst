@@ -13,4 +13,4 @@ Reference for electronic's design
 
 * `PCB Design Perfection Starts in the CAD Library <http://www.innofour.com/News/Literature/PCB-Design-Perfection-Starts-in-the-CAD-Library>`_
 * `Metric VS: Imperial Measurement Systems <http://blogs.mentor.com/tom-hausherr/blog/2010/07/08/metric-vs-imperial-measurement-systems/>`_
-
+* `IPC-7531 <http://pcbget.ru/Files/Standarts/IPC_7351.pdf>`_
