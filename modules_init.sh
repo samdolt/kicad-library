@@ -43,6 +43,8 @@ cat  "$SRC/template/fp-lib-table.for-github" \
 echo -e "\n"
 echo "Upgrade footprints libraries"
 echo "============================"
+git submodule foreach git checkout master
 git submodule foreach git pull
+
 
 cd "$ORIGINAL_PWD"

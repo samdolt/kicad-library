@@ -91,9 +91,10 @@ else
     echo "setenv KISYSMOD /Library/Application\ Support/kicad/modules"  \
     | sudo tee "$STARTUP"
 
-    echo "SETENV KISYSMOD"
-    launchctl setenv KISYSMOD /Library/Application\ Support/kicad/modules
- fi
+fi
+
+echo "SETENV KISYSMOD"
+launchctl setenv KISYSMOD /Library/Application\ Support/kicad/modules
 
 echo -e "\n"
 
