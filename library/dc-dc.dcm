@@ -825,6 +825,11 @@ K Adjustable 1A Step-Down Converter 76V
 F http://datasheets.maximintegrated.com/en/ds/MAX5035.pdf
 $ENDCMP
 #
+$CMP NCP1529_TSOP
+D 1.7MHz, 1A, Adjustable Output Voltage Step-down Converter
+F http://www.onsemi.com/pub_link/Collateral/NCP1529-D.PDF
+$ENDCMP
+#
 $CMP ST1CC40PHR
 D ST1CC40PHR, DC/DC Buck CC Converter for LED's, Vin 18V, 3A, Power SO-8  (Preliminary)
 K DC/DC Buck Conwerter 3A Low Voltage Input LED Lighting
