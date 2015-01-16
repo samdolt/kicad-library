@@ -166,6 +166,12 @@ K RS232 UART Driver Receiver Interface
 F http://www.ti.com/lit/ds/symlink/gd75232.pdf
 $ENDCMP
 #
+$CMP LTC2850
+D Half-duplex RS485/RS422 Transceivers - 3.3V - 20Mbps
+K RS485, RS422, Half-duplex, EIA-485, EIA-422
+F http://cds.linear.com/docs/en/datasheet/285012fd.pdf
+$ENDCMP
+#
 $CMP LTC2861
 D 20Mbps RS485 transceiver with tntegrated switchable termination
 K RS485
