@@ -50,6 +50,12 @@ K JTAG, SWD, ARM, Debug, ICP, ICSP
 F http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf
 $ENDCMP
 #
+$CMP Conn_MicroSD_Hirose_DM3D-SF
+D Connector MicroSD Card - Push Pull - Hirose DM3D-SF
+K SD, Card, MicroSD
+F https://www.hirose.co.jp/cataloge_hp/e60900232.pdf
+$ENDCMP
+#
 $CMP DB15
 K CONN
 $ENDCMP
