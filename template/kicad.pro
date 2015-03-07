@@ -49,8 +49,12 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+[schematic_editor]
+version=1
+PageLayoutDescrFile=dolt.kicad_wks
 [pcbnew]
 version=1
+PageLayoutDescrFile=dolt.kicad_wks
 LastNetListRead=
 UseCmpFile=1
 PadDrill=0.600000000000
