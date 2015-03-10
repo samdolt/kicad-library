@@ -253,3 +253,15 @@
 [submodule "modules/Wire_Pads.pretty"]
 	path = modules/Wire_Pads.pretty
 	url = git://github.com/KiCad/Wire_Pads.pretty.git
+[submodule "modules/Buttons_Switches_SMD.pretty"]
+	path = modules/Buttons_Switches_SMD.pretty
+	url = git://github.com/KiCad/Buttons_Switches_SMD.pretty.git
+[submodule "modules/Buttons_Switches_ThroughHole.pretty"]
+	path = modules/Buttons_Switches_ThroughHole.pretty
+	url = git://github.com/KiCad/Buttons_Switches_ThroughHole.pretty.git
+[submodule "modules/Power_Packages_SMD.pretty"]
+	path = modules/Power_Packages_SMD.pretty
+	url = git://github.com/KiCad/Power_Packages_SMD.pretty.git
+[submodule "modules/Power_Packages_ThroughHole.pretty"]
+	path = modules/Power_Packages_ThroughHole.pretty
+	url = git://github.com/KiCad/Power_Packages_ThroughHole.pretty.git
