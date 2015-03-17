@@ -78,6 +78,7 @@ LibName63=supertex
 LibName64=switches
 LibName65=transf
 LibName67=video
+LibName68=microchip_dspic33dsc
 [schematic_editor]
 version=1
 PageLayoutDescrFile=dolt.kicad_wks
