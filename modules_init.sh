@@ -37,7 +37,8 @@ cat  "$SRC/template/fp-lib-table.for-github" \
 | grep "name" \
 | cut -d ' ' -f 5 \
 | cut -d ')' -f 1 \
-| xargs -I SM git submodule add git://github.com/${githubUser}/SM.pretty.git modules/SM.pretty
+| xargs -I SM git submodule add -f git://github.com/${githubUser}/SM.pretty.git modules/SM.pretty
+# Note: We use -f because .pretty are ignored by git in .git/info/exclude
 
 
 echo -e "\n"

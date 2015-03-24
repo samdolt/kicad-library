@@ -265,3 +265,12 @@
 [submodule "modules/Power_Packages_ThroughHole.pretty"]
 	path = modules/Power_Packages_ThroughHole.pretty
 	url = git://github.com/KiCad/Power_Packages_ThroughHole.pretty.git
+[submodule "modules/Housings_DIP.pretty"]
+	path = modules/Housings_DIP.pretty
+	url = git://github.com/KiCad/Housings_DIP.pretty.git
+[submodule "modules/Microwave.pretty"]
+	path = modules/Microwave.pretty
+	url = git://github.com/KiCad/Microwave.pretty.git
+[submodule "modules/Transformers_CHK.pretty"]
+	path = modules/Transformers_CHK.pretty
+	url = git://github.com/KiCad/Transformers_CHK.pretty.git
