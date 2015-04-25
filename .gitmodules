@@ -274,3 +274,6 @@
 [submodule "modules/Transformers_CHK.pretty"]
 	path = modules/Transformers_CHK.pretty
 	url = git://github.com/KiCad/Transformers_CHK.pretty.git
+[submodule "modules/Varistors.pretty"]
+	path = modules/Varistors.pretty
+	url = git://github.com/KiCad/Varistors.pretty.git
