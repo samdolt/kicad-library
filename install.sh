@@ -21,6 +21,15 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then
     DEST="/usr/share/kicad"
     PREF="$HOME/.config/kicad"
+elif [[ "$OSTYPE" == "msys" ]]; then
+    DEST='/C/PROGRA~1/KiCad/share/kicad'
+    PREF="$HOME/AppData/Roaming/kicad"
+
+    # Fake sudo
+    echo "#!/usr/bin/bash" > sudo
+    echo "\$@" >> sudo
+    chmod +x sudo
+    PATH=$PATH:$PWD
 else
     echo "Not supported OS"
     exit 1
@@ -48,16 +57,16 @@ echo "Source directory is $SRC"
 echo "Destination directory is $SRC"
 
 echo "Create symlinks for library"
-echo ln -s "$SRC/library" "$DEST/library"
-sudo ln -n -f -s "$SRC/library" "$DEST/library"
+echo ln -s "$SRC/library" "${DEST}/library"
+sudo ln -n -f -s "$SRC/library" "${DEST}/library"
 
 echo "Create symlinks for modules"
-echo ln -s "$SRC/modules" "$DEST/modules"
-sudo ln -n -f -s "$SRC/modules" "$DEST/modules"
+echo ln -s "$SRC/modules" "${DEST}/modules"
+sudo ln -n -f -s "$SRC/modules" "${DEST}/modules"
 
 echo "Create symlinks for template"
-echo ln -s "$SRC/template" "$DEST/template"
-sudo ln -n -f -s "$SRC/template" "$DEST/template"
+echo ln -s "$SRC/template" "${DEST}/template"
+sudo ln -n -f -s "$SRC/template" "${DEST}/template"
 
 echo -e "\n"
 echo "Creating user's preferences directory"
@@ -100,7 +109,7 @@ fi
 
 echo -e "\n"
 
-bash "$SRC/modules_init.sh"
+#bash "$SRC/modules_init.sh"
 
 echo "   END   "
 echo "========="

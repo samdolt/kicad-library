@@ -1,2 +1,3 @@
 *.bak
 *.bck
+sudo # Fake sudo created on windows

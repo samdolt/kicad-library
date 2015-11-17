@@ -277,3 +277,9 @@
 [submodule "modules/Varistors.pretty"]
 	path = modules/Varistors.pretty
 	url = git://github.com/KiCad/Varistors.pretty.git
+[submodule "modules/TO_SOT_Packages_SMD.pretty"]
+	path = modules/TO_SOT_Packages_SMD.pretty
+	url = git://github.com/KiCad/TO_SOT_Packages_SMD.pretty.git
+[submodule "modules/TO_SOT_Packages_THT.pretty"]
+	path = modules/TO_SOT_Packages_THT.pretty
+	url = git://github.com/KiCad/TO_SOT_Packages_THT.pretty.git
