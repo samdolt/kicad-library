@@ -8,7 +8,6 @@ $ENDCMP
 #
 $CMP PIC32MZ2048ECG144
 D 32-bit MCUs (up to 2 MB Live-Update Flash and 512 KB SRAM) with 
-Audio and Graphics Interfaces, HS USB, Ethernet, and Advanced Analog
 K PIC32MZ
 F http://ww1.microchip.com/downloads/en/DeviceDoc/60001191E.pdf
 $ENDCMP
