@@ -39,11 +39,16 @@ echo "Kicad library install script"
 
 echo -e "\n"
 
+echo "This script link some folder from /usr/share/kicad or OSX equivalent"
+echo "to this git repo"
+
+echo -e "\n"
+
 echo "Warning: This script don't work if"
 echo "modules, template or library exist in"
 echo "$DEST"
 
-sleep 1
+sleep 2
 
 echo -e "\n"
 echo "Create links - $DEST"
