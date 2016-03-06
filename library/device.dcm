@@ -191,7 +191,7 @@ D LED RGB 6 pins, exposed pad
 $ENDCMP
 #
 $CMP L_Small
-D Inductor
+D Inducator
 $ENDCMP
 #
 $CMP Led_RGB_CA
